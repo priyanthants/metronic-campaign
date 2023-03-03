@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<!--begin::Head-->
+	<head><base href=""/>
+		<title>XLS Admin</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="desc" />
+		<meta name="keywords" content="xls,collinson, campaings" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="XLS Admin" />
+		<meta property="og:url" content="" />
+		<meta property="og:site_name" content="XLS Admin" />
+		<link rel="canonical" href="" />
+		<link rel="shortcut icon" href="assets/metronic/media/logos/favicon.ico" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="assets/metronic/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/xls/style.custom.css" rel="stylesheet" type="text/css" />
+		<link href="assets/metronic/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+
+		
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_app_body" data-kt-app-layout="light-sidebar"  data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+		<!--end::Theme mode setup on page load-->
+		<!--begin::App-->
+		<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+			<!--begin::Page-->
+			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+				<!--begin::Wrapper-->
+				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+					<!--begin::Sidebar-->
+					<div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+						<!--begin::Logo-->
+						<div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
+							<!--begin::Logo image-->
+							<a href="../../demo1/dist/index.html">
+								<img alt="Logo" src="assets/xls/collinson-logo.png" class="h-25px app-sidebar-logo-default" />
+								<img alt="Logo" src="assets/xls/collinson-logo-mini-md.png" class="h-20px app-sidebar-logo-minimize" />
+							</a>
+							<!--end::Logo image-->
+							<!--begin::Sidebar toggle-->
+							<div id="kt_app_sidebar_toggle" class="app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary body-bg h-30px w-30px position-absolute top-50 start-100 translate-middle rotate" data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body" data-kt-toggle-name="app-sidebar-minimize">
+								<!--begin::Svg Icon | path: icons/duotune/arrows/arr079.svg-->
+								<span class="svg-icon svg-icon-2 rotate-180">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.5" d="M14.2657 11.4343L18.45 7.25C18.8642 6.83579 18.8642 6.16421 18.45 5.75C18.0358 5.33579 17.3642 5.33579 16.95 5.75L11.4071 11.2929C11.0166 11.6834 11.0166 12.3166 11.4071 12.7071L16.95 18.25C17.3642 18.6642 18.0358 18.6642 18.45 18.25C18.8642 17.8358 18.8642 17.1642 18.45 16.75L14.2657 12.5657C13.9533 12.2533 13.9533 11.7467 14.2657 11.4343Z" fill="currentColor" />
+										<path d="M8.2657 11.4343L12.45 7.25C12.8642 6.83579 12.8642 6.16421 12.45 5.75C12.0358 5.33579 11.3642 5.33579 10.95 5.75L5.40712 11.2929C5.01659 11.6834 5.01659 12.3166 5.40712 12.7071L10.95 18.25C11.3642 18.6642 12.0358 18.6642 12.45 18.25C12.8642 17.8358 12.8642 17.1642 12.45 16.75L8.2657 12.5657C7.95328 12.2533 7.95328 11.7467 8.2657 11.4343Z" fill="currentColor" />
+									</svg>
+								</span>
+								<!--end::Svg Icon-->
+							</div>
+							<!--end::Sidebar toggle-->
+						</div>
+						<!--end::Logo-->
+						<!--begin::sidebar menu-->
+						<div class="app-sidebar-menu overflow-hidden flex-column-fluid">
+							<!--begin::Menu wrapper-->
+							<div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper hover-scroll-overlay-y my-5" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer" data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px" data-kt-scroll-save-state="true">
+								<!--begin::Menu-->
+								<div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false">
+									<!--begin:Menu item-->
+									<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+										<!--begin:Menu link-->
+										<span class="menu-link">
+											<span class="menu-icon">
+												<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
+												<span class="svg-icon svg-icon-2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect x="2" y="2" width="9" height="9" rx="2" fill="currentColor" />
+														<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="currentColor" />
+														<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="currentColor" />
+														<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</span>
+											<span class="menu-title">Programs</span>
+											<span class="menu-arrow"></span>
+										</span>
+										<!--end:Menu link-->
+										<!--begin:Menu sub-->
+										<div class="menu-sub menu-sub-accordion">
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link active" href="campaign.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Campaign</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="campaign.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Reward</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+									
+		
+										</div>
+										<!--end:Menu sub-->
+									</div>
+									<!--end:Menu item-->
+								
+									
+											
+								</div>
+								<!--end::Menu-->
+							</div>
+							<!--end::Menu wrapper-->
+						</div>
+						<!--end::sidebar menu-->
+			
+					</div>
+					<!--end::Sidebar-->
+					<!--begin::Main-->
+					<div class="app-main card flex-column flex-row-fluid" id="kt_app_main">
+						<!--begin::Content wrapper-->
+						<div class="d-flex flex-column flex-column-fluid">
+							<!--begin::Toolbar-->
+							<div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
+								<!--begin::Toolbar container-->
+								<div id="kt_app_toolbar_container" class="app-container container-fluid d-flex flex-stack">
+									<!--begin::Page title-->
+									<div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+								
+										<!--begin::Breadcrumb-->
+										<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+											<!--begin::Item-->
+											<li class="breadcrumb-item text-muted bg-primary-light">
+												<a href="../../demo1/dist/index.html" class="text-primary text-hover-primary">Programs</a>
+											</li>
+											<!--end::Item-->
+											<!--begin::Item-->
+											<li class="breadcrumb-item">
+												<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/arrows/arr071.svg-->
+													<span class="svg-icon svg-icon-muted svg-icon-sm">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M12.6343 12.5657L8.45001 16.75C8.0358 17.1642 8.0358 17.8358 8.45001 18.25C8.86423 18.6642 9.5358 18.6642 9.95001 18.25L15.4929 12.7071C15.8834 12.3166 15.8834 11.6834 15.4929 11.2929L9.95001 5.75C9.5358 5.33579 8.86423 5.33579 8.45001 5.75C8.0358 6.16421 8.0358 6.83579 8.45001 7.25L12.6343 11.4343C12.9467 11.7467 12.9467 12.2533 12.6343 12.5657Z" fill="currentColor"/>
+														</svg>
+													</span>
+												<!--end::Svg Icon-->
+											</li>
+											<!--end::Item-->
+											<!--begin::Item-->
+											<li class="breadcrumb-item text-muted">Campaign</li>
+											<!--end::Item-->
+										</ul>
+										<!--end::Breadcrumb-->
+									</div>
+									<!--end::Page title-->
+								
+								</div>
+								<!--end::Toolbar container-->
+							</div>
+							<!--end::Toolbar-->
+							<!--begin::Content-->
+							<div id="kt_app_content" class="app-content flex-column-fluid">
+								<!--begin::Content container-->
+								<div id="kt_app_content_container" class="app-container container-fluid">
+									
+									<!--begin::Row-->
+									<div class="row gx-5 gx-xl-10">
+								
+										<!--begin::Col-->
+										<div class="col-xl-12 mb-5 mb-xl-10">
+											<!--begin::Tables widget 16-->
+											<div class="card card-flush h-xl-100">
+												<!--begin::Header-->
+												<div class="card-header pt-5">
+													<!--begin::Title-->
+													<h3 class="card-title align-items-start flex-column">
+														<span class="card-label fw-bold text-gray-800">Campaigns</span>
+														<span class="text-gray-400 mt-1 fw-semibold fs-6">150 corresponding results</span>
+													</h3>
+													<!--end::Title-->
+													<div class="ms-5">
+														<button type="button" class="btn btn-primary btn-sm">Search
+															<i class="ps-2 fa fa-search"></i>
+															</button>
+														<button type="button" class="btn btn-light-primary btn-sm font-weight-bold ms-3">Add New +</button>
+													</div>
+
+												</div>
+												<!--end::Header-->
+												<!--begin::Body-->
+												<div class="card-body pt-6">
+													<!--begin::Content-->
+							<div class="flex-row-fluid py-lg-5 px-lg-15">
+
+
+
+								<!--begin::Form-->
+								<form class="form" novalidate="novalidate" id="kt_modal_create_app_form">
+									<!--begin::Step 1-->
+									<div class="current" data-kt-stepper-element="content">
+										<div class="w-100">
+								
+											<!--begin::Input group-->
+											<div class="row mb-10">
+
+												<!--begin::row 1-->
+												<div class="row mb-10">
+
+													<!--begin::Col-->
+													<div class="col-md-1 fv-row pt-12">
+														<!--begin::Radio group-->
+														<input type="radio" name="searchType" value="0" checked class="form-check-input" >
+														<!--end::Radio group-->
+														<!--begin::Radio Label-->
+														<label class="form-label" for="searchType">Name</label>
+														<!--end::Radio Label-->
+													</div>
+													<!--end::Col-->
+
+												
+													<!--begin::Col-->
+													<div class="col-md-4 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+															<span class="required">Name</span>
+															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter a campaign name"></i>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="Ex: Campaign Name" name="campaignName" />
+															<!--end::Input-->
+													
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+
+
+													<!--begin::Col-->
+													<div class="col-md-4 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+															<span class="required">Match</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+																<option>Select one</option>
+																<option value="1">Exact Match</option>
+																<option value="2">Starting with</option>
+																<option value="3">Containing</option>
+															</select>
+															<!--end::Input-->
+													
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+
+
+												</div>
+												<!--end::row 1-->
+												
+												<!--begin::row 2-->
+												<div class="row mb-10">
+													
+													<!--begin::Col-->
+													<div class="col-md-1 fv-row pt-12">
+														<!--begin::Radio group-->
+														<input type="radio" name="searchType" value="1"  class="form-check-input" >
+														<!--end::Radio group-->
+														<!--begin::Radio Label-->
+														<label class="form-check-label" for="searchType">ID</label>
+														<!--end::Radio Label-->
+													</div>
+													<!--end::Col-->
+
+													<!--begin::Col-->
+													<div class="col-md-4 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-semibold form-check-label  mb-2 ">
+															<span class="required">From</span>
+															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter from campaign Id"></i>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="Minimal ID" name="fromCampaignId" />
+															<!--end::Input-->
+													
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+
+													<!--begin::Col-->
+													<div class="col-md-4 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-semibold form-check-label  mb-2">
+															<span class="required">To</span>
+															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter to campaign Id"></i>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="Maximal ID" name="fromCampaignId" />
+															<!--end::Input-->
+													
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+												
+												</div>
+												<!--end::row 2-->
+												
+
+												<!--begin::row 3-->
+												<div class="row mb-10">
+		
+
+													<!--begin::Col-->
+													<div class="col-md-2 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2 form-label">
+															<span>Type</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+																<option>Select one</option>
+																<option value="1">Generic</option>
+																<option value="2">RFM</option>
+																<option value="3">Welcome</option>
+															</select>
+															<!--end::Input-->
+													
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+
+													<!--begin::Col-->
+													<div class="col-md-2 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2 form-label">
+															<span>Status</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+																<option>Select one</option>
+																<option value="1">Active</option>
+																<option value="2">Expired</option>
+																<option value="3">Deleted</option>
+															</select>
+															<!--end::Input-->
+													
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+												
+												</div>
+												<!--end::row 3-->
+
+
+												
+											</div>
+											<!--end::Input group-->
+								
+										</div>
+									</div>
+									<!--end::Step 1-->
+								
+								</form>
+								<!--end::Form-->
+							</div>
+							<!--end::Content-->
+
+
+                                                    <!--begin::Table wrapper-->
+                                                    <div class="table-responsive">
+                                                        <!--begin::Table-->
+                                                        <table class="table align-middle table-row-bordered table-row-solid table-striped  gy-4 gs-9 ">
+															<caption></caption>
+                                                            <!--begin::Thead-->
+                                                            <thead class="fw-semibold fs-6 text-gray-800 bg-primary-light">
+                                                                <tr>
+                                                                    <th class="min-w-50px fw-bold"><span>N<span class="text-valign-super">o</span></th>
+                                                                    <th class="min-w-100px fw-bold">ID</th>
+                                                                    <th class="min-w-250px fw-bold">Name</th>
+                                                                    <th class="min-w-100px fw-bold">Type</th>
+                                                                    <th class="min-w-100px fw-bold">Status</th>
+																	<th class="min-w-100px fw-bold">Global</th>
+                                                                    <th class="min-w-150px fw-bold"></th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <!--end::Thead-->
+                                                            <!--begin::Tbody-->
+                                                            <tbody class="fw-6 fw-semibold text-gray-600">
+                                                                
+
+										
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">01</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">101</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Recurring Day Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-recurring fs-7 fw-bold badge-lg">Recurring Day/Hour</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td>
+																		<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/abstract/abs050.svg-->
+																		<span class="svg-icon svg-icon-info svg-icon-7">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																				<circle fill="currentColor" cx="12" cy="12" r="8"/>
+																			</svg>
+																		</span>
+																		<!--end::Svg Icon-->	
+																	</td>
+                                                                    <td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                    
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">02</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">102</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Birthday Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-birthday fs-7 fw-bold  badge-lg">Birthday</span> </td>
+                                                                    <td> <span class="badge badge-status-expired  badge-lg fw-bold">Expired</span></td>
+																	<td>
+																		<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/abstract/abs050.svg-->
+																		<span class="svg-icon svg-icon-info svg-icon-7">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																				<circle fill="currentColor" cx="12" cy="12" r="8"/>
+																			</svg>
+																		</span>
+																		<!--end::Svg Icon-->
+																	</td>
+                                                                    <td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                    
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">03</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">103</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Tier Management Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-tier fs-7 fw-bold  badge-lg">Tier Management</span> </td>
+                                                                    <td> <span class="badge badge-status-expired  badge-lg fw-bold">Expired</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                    
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">04</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">104</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Event Day Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-event fs-7 fw-bold  badge-lg">Event Day</span> </td>
+                                                                    <td> <span class="badge badge-status-expired  badge-lg fw-bold">Expired</span></td>
+                                                                    <td>
+																		<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/abstract/abs050.svg-->
+																		<span class="svg-icon svg-icon-info svg-icon-7">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																				<circle fill="currentColor" cx="12" cy="12" r="8"/>
+																			</svg>
+																		</span>
+																		<!--end::Svg Icon-->
+																	</td>
+                                                                    <td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+                                                               
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">05</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">105</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Generic Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-generic fs-7 fw-bold  badge-lg">Generic</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">06</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold ">106</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Welcome Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-welcome fs-7 fw-bold  badge-lg">welcome</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">07</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">107</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">RFM Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-rfm fs-7 fw-bold  badge-lg">RFM</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">08</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">108</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Item Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-item fs-7 fw-bold  badge-lg">Items</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">09</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">109</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">PSL Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-psl fs-7 fw-bold  badge-lg">PSL</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">10</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">110</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Lucky Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-lucky fs-7 fw-bold  badge-lg">Lucky</span> </td>
+                                                                    <td> <span class="badge badge-status-active  badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+
+
+																<tr>
+																	<td><span class="text-gray-900 fw-bold">11</span></td>
+																	<td><a href="#" class="text-decoration-underline fw-bold">111</a></td>
+                                                                    <td><a href="#" class="text-hover-primary text-gray-900 fw-bold">Communication Campaign</a></td>
+                                                                    <td> <span class="badge badge-campaign-communication fs-7 fw-bold  badge-lg">Communication</span> </td>
+                                                                    <td> <span class="badge badge-status-active badge-lg fw-bold">Active</span></td>
+                                                                    <td></td>
+																	<td>
+																		<span class="row">
+																			<span class="col-md-4">
+																				<a href="#" class="btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen019.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"/>
+																							<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen055.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.63158C2 3.1782 3.1782 2 4.63158 2H13.47C14.0155 2 14.278 2.66919 13.8778 3.04006L12.4556 4.35821C11.9009 4.87228 11.1726 5.15789 10.4163 5.15789H7.1579C6.05333 5.15789 5.15789 6.05333 5.15789 7.1579V16.8421C5.15789 17.9467 6.05333 18.8421 7.1579 18.8421H16.8421C17.9467 18.8421 18.8421 17.9467 18.8421 16.8421V13.7518C18.8421 12.927 19.1817 12.1387 19.7809 11.572L20.9878 10.4308C21.3703 10.0691 22 10.3403 22 10.8668V19.3684C22 20.8218 20.8218 22 19.3684 22H4.63158C3.1782 22 2 20.8218 2 19.3684V4.63158Z" fill="currentColor"/>
+																							<path d="M10.9256 11.1882C10.5351 10.7977 10.5351 10.1645 10.9256 9.77397L18.0669 2.6327C18.8479 1.85165 20.1143 1.85165 20.8953 2.6327L21.3665 3.10391C22.1476 3.88496 22.1476 5.15129 21.3665 5.93234L14.2252 13.0736C13.8347 13.4641 13.2016 13.4641 12.811 13.0736L10.9256 11.1882Z" fill="currentColor"/>
+																							<path d="M8.82343 12.0064L8.08852 14.3348C7.8655 15.0414 8.46151 15.7366 9.19388 15.6242L11.8974 15.2092C12.4642 15.1222 12.6916 14.4278 12.2861 14.0223L9.98595 11.7221C9.61452 11.3507 8.98154 11.5055 8.82343 12.0064Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																			<span class="col-md-4">
+																				<a href="#" class="col-md-4 btn btn-icon btn-white btn-hover-primary btn-sm mr-3 shadow">
+																					<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen027.svg-->
+																					<span class="svg-icon svg-icon-3 svg-icon-primary">
+																						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																							<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"/>
+																							<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"/>
+																						</svg>
+																					</span>
+																					<!--end::Svg Icon-->
+																				</a>
+																			</span>
+																			
+																		</span>
+																	</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--end::Tbody-->
+
+                                                        </table>
+                                                        <!--end::Table-->
+														<div>
+																<ul class="pagination">
+																	<li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a></li>
+																	<li class="page-item border rounded bg-primary-light active"><a href="#" class="page-link">1</a></li>
+																	<li class="page-item border rounded bg-primary-light"><a href="#" class="page-link">2</a></li>
+																	<li class="page-item border rounded bg-primary-light"><a href="#" class="page-link">3</a></li>
+																	<li class="page-item "><span class="text-valign-sub">..</span></li>
+																	<li class="page-item border rounded bg-primary-light"><a href="#" class="page-link">18</a></li>
+																	<li class="page-item next"><a href="#"  class="page-link"><i class="next"></i></a></li>
+																</ul>
+														</div>
+
+                                                    </div>
+											<!--end::Table wrapper-->
+												</div>
+												<!--end: Card Body-->
+											</div>
+											<!--end::Tables widget 16-->
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+									
+								</div>
+								<!--end::Content container-->
+							</div>
+							<!--end::Content-->
+						</div>
+						<!--end::Content wrapper-->
+						
+					</div>
+					<!--end:::Main-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::App-->
+
+
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/";</script>
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="assets/metronic/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/metronic/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+
+		
+
+		<!--begin::Vendors Javascript(used for this page only)-->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+		<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<!--end::Vendors Javascript-->
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/metronic/js/widgets.bundle.js"></script>
+		<script src="assets/metronic/js/custom/widgets.js"></script>
+		<script src="assets/metronic/js/custom/apps/chat/chat.js"></script>
+		<script src="assets/metronic/js/custom/utilities/modals/upgrade-plan.js"></script>
+		<script src="assets/metronic/js/custom/utilities/modals/create-app.js"></script>
+		<script src="assets/metronic/js/custom/utilities/modals/new-target.js"></script>
+		<script src="assets/metronic/js/custom/utilities/modals/users-search.js"></script>
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+</html>
