@@ -117,11 +117,8 @@
     vertical-align:sub;  
 }
 
-.table-striped>tr:nth-child(odd){
-    background-color:var(--bs-primary-light) !important;
- }
-
  .table {
-    --bs-table-striped-bg:var(--bs-primary-light) !important;
+    --bs-table-bg:var(--bs-primary-light) !important;
+    --bs-table-striped-bg:var(--bs-white) !important;
     --bs-border-color:#E5EAEF !important;
 }
